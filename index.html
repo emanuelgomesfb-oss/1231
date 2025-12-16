@@ -40,18 +40,29 @@
         text-shadow: 0 0 10px rgba(163, 230, 53, 0.5);
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.1/",
-    "react": "https://esm.sh/react@^19.2.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.559.0"
-  }
-}
-</script>
+    <!-- Polyfill process.env for Netlify API Key -->
+    <script>
+      window.process = {
+        env: {
+          API_KEY: "__API_KEY__"
+        }
+      };
+    </script>
+    <!-- Babel Standalone -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.1/",
+        "react": "https://esm.sh/react@^19.2.1",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.559.0"
+      }
+    }
+    </script>
 </head>
   <body>
     <div id="root"></div>
+    <script type="text/babel" data-presets="env,react" data-type="module" src="./index.tsx"></script>
   </body>
 </html>

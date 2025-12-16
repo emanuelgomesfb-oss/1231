@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './Button';
+import { Button } from './Button.tsx';
 import { Lock, Check } from 'lucide-react';
 
 export const Pricing: React.FC = () => {

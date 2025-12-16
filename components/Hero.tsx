@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Button } from './Button';
+import { Button } from './Button.tsx';
 import { ArrowDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Hero } from './components/Hero';
-import { Audience } from './components/Audience';
-import { Features } from './components/Features';
-import { SocialProof } from './components/SocialProof';
-import { Bonuses } from './components/Bonuses';
-import { Pricing } from './components/Pricing';
-import { Bio } from './components/Bio';
-import { Footer } from './components/Footer';
-import { FAQ } from './components/FAQ';
+import { Hero } from './components/Hero.tsx';
+import { Audience } from './components/Audience.tsx';
+import { Features } from './components/Features.tsx';
+import { SocialProof } from './components/SocialProof.tsx';
+import { Bonuses } from './components/Bonuses.tsx';
+import { Pricing } from './components/Pricing.tsx';
+import { Bio } from './components/Bio.tsx';
+import { Footer } from './components/Footer.tsx';
+import { FAQ } from './components/FAQ.tsx';
 
 function App() {
   const [showSticky, setShowSticky] = useState(false);
